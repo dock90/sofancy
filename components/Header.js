@@ -1,5 +1,25 @@
-import React from 'react';
+import Link from 'next/link';
 
-const Header = () => <div>some content</div>;
+import Toolbar from '@material-ui/core/Toolbar';
+import Grid from '@material-ui/core/Grid';
+
+import { styleToolbar } from './SharedStyles';
+
+const Header = () => (
+  <div>
+    <Toolbar style={styleToolbar}>
+      <Grid container direction="row" justify="space-around" align="center">
+        <Grid item xs={12} style={{ textAlign: 'right' }}>
+          <Link prefetch href="#">
+            <a style={{ margin: '0px 20px 0px auto' }}>dock90</a>
+          </Link>
+          <Link prefetch href="/thoughts">
+            <a style={{ margin: '0px 20px 0px auto' }}>thoughts</a>
+          </Link>
+        </Grid>
+      </Grid>
+    </Toolbar>
+  </div>
+);
 
 export default Header;
