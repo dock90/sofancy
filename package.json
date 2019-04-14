@@ -12,7 +12,8 @@
     "dev server": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "lint": "eslint pages"
+    "lint": "eslint pages",
+    "export": "yarn build && next export"
   },
   "dependencies": {
     "@material-ui/core": "^3.9.3",

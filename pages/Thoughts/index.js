@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { format } from 'date-fns';
+import PropTypes from 'prop-types';
 import { Link } from '../../routes';
 import client from '../../client';
 import withLayout from '../../lib/withLayout';
@@ -31,3 +32,7 @@ class Index extends PureComponent {
 }
 
 export default withLayout(Index);
+
+Index.propTypes = {
+  posts: PropTypes.array,
+};

@@ -3,6 +3,7 @@ import BlockContent from '@sanity/block-content-to-react';
 import imageUrlBuilder from '@sanity/image-url';
 import { format } from 'date-fns';
 import Error from 'next/error';
+import PropTypes from 'prop-types';
 import { Link } from '../../routes';
 import client from '../../client';
 import withLayout from '../../lib/withLayout';
@@ -31,6 +32,7 @@ class Thought extends PureComponent {
   };
 
   render() {
+    const { post } = this.props;
     const {
       title = 'No title',
       name = 'No name',
@@ -38,7 +40,7 @@ class Thought extends PureComponent {
       authorImage = {},
       body = [],
       _updatedAt = '',
-    } = this.props.post;
+    } = post;
 
     if (!_updatedAt) {
       return <Error statusCode={404} />;
@@ -58,6 +60,7 @@ class Thought extends PureComponent {
             src={urlFor(authorImage)
               .width(50)
               .url()}
+            alt="Author Profile"
           />
         </div>
         <BlockContent
@@ -75,3 +78,7 @@ class Thought extends PureComponent {
 }
 
 export default withLayout(Thought);
+
+Thought.propTypes = {
+  post: PropTypes.object,
+};
