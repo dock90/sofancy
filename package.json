@@ -1,5 +1,5 @@
 {
-  "name": "oh-so-fancy",
+  "name": "sofancy",
   "version": "0.0.1",
   "description": "This is dock90. No frills.",
   "main": "index.js",
@@ -17,6 +17,7 @@
     "@material-ui/core": "^3.9.3",
     "@sanity/client": "^0.140.11",
     "next": "^8.0.3",
+    "next-routes": "^1.4.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-jss": "^8.6.1",
