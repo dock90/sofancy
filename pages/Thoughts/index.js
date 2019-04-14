@@ -13,7 +13,7 @@ class Index extends PureComponent {
   render() {
     const { posts = [] } = this.props;
     return (
-      <div>
+      <div style={{ padding: '10px 45px' }}>
         <h1>Thoughts</h1>
         {posts.map(
           ({ _id, title = '', slug = '', _updatedAt = '' }) =>

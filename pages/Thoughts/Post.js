@@ -47,7 +47,7 @@ class Thought extends PureComponent {
     }
 
     return (
-      <div>
+      <div style={{ padding: '10px 45px' }}>
         <h1>{title}</h1>
         By {name}. Updated {format(_updatedAt, 'DD. MMMM, YYYY')}.{' '}
         {categories.length > 0 && (
