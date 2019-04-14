@@ -18,7 +18,7 @@ class Index extends PureComponent {
           ({ _id, title = '', slug = '', _updatedAt = '' }) =>
             slug && (
               <li key={_id}>
-                <Link prefetch route={`/blog/${slug.current}`}>
+                <Link prefetch route={`/thoughts/${slug.current}`}>
                   <a>{title}</a>
                 </Link>{' '}
                 ({format(_updatedAt, 'DD. MMMM, YYYY')})

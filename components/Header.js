@@ -12,7 +12,7 @@ const Header = () => (
           <Link prefetch route="/">
             <a style={{ margin: '0px 20px 0px auto' }}>dock90</a>
           </Link>
-          <Link prefetch route="/blog">
+          <Link prefetch route="/thoughts">
             <a style={{ margin: '0px 20px 0px auto' }}>thoughts</a>
           </Link>
         </Grid>

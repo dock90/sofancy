@@ -12,7 +12,7 @@ function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
 
-class BlogPost extends PureComponent {
+class Thought extends PureComponent {
   static getInitialProps = async ({ res, query: { slug } }) => {
     const post = slug
       ? await client.fetch(
@@ -74,4 +74,4 @@ class BlogPost extends PureComponent {
   }
 }
 
-export default withLayout(BlogPost);
+export default withLayout(Thought);
