@@ -13,7 +13,7 @@ class Index extends PureComponent {
     const { posts = [] } = this.props;
     return (
       <div>
-        <h1>Blog archive</h1>
+        <h1>Thoughts</h1>
         {posts.map(
           ({ _id, title = '', slug = '', _updatedAt = '' }) =>
             slug && (
