@@ -1,6 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
+import styled from 'styled-components';
 import withLayout from '../lib/withLayout';
+
+const Intro = styled.h1`
+  padding: 5vh 0px;
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(76, 79, 90);
+  width: 40%;
+  font-weight: 300;
+  line-height: 1.3em;
+`;
 
 const Index = () => (
   <div style={{ padding: '10px 45px' }}>
@@ -11,7 +23,7 @@ const Index = () => (
         content="Dock90 is a product design studio. We help privately funded SaaS startups figure out where to start and what to build next."
       />
     </Head>
-    <h1>Welcome to dock90</h1>
+    <Intro>Welcome to dock90</Intro>
     <h2>
       We help privately funded SaaS startups figure out where to start and what
       to build next.
