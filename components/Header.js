@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
 import { Link } from '../routes';
 
-import { styleToolbar } from './SharedStyles';
+import { styleToolbar } from './styled/SharedStyles';
 
 const NavLink = styled.a`
   color: #4c4f5a;
@@ -11,19 +11,23 @@ const NavLink = styled.a`
   padding: 5px 10px;
   transition: all 100ms ease 0s;
   text-decoration: none;
-  font-size: 16px;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif;
+  font-size: 1.2rem;
+  font-family: Roboto, Oxygen, Ubuntu, 'Open Sans', sans-serif;
 `;
 
 const Header = () => (
   <div>
     <Toolbar style={styleToolbar}>
-      <Grid container direction="row" justify="space-around" align="center">
-        <Grid item xs={12} style={{ textAlign: 'right' }}>
+      <Grid container direction="row" justify="space-between" align="center">
+        <Grid item sm={1} xs={3} style={{ textAlign: 'left' }}>
           <Link prefetch route="/">
             <NavLink>dock90</NavLink>
           </Link>
+        </Grid>
+        <Grid item sm={9} xs={3} style={{ textAlign: 'right' }}>
+          {/* <Link prefetch route="/services">
+            <NavLink>services</NavLink>
+          </Link> */}
           <Link prefetch route="/thoughts">
             <NavLink>thoughts</NavLink>
           </Link>
