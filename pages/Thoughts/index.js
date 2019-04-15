@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link } from '../../routes';
 import client from '../../client';
 import withLayout from '../../lib/withLayout';
-
+import PageTitle from '../../components/styled/PageTitle'
 class Index extends PureComponent {
   static getInitialProps = async () => ({
     posts: await client.fetch(`*[_type == "post"]`),
@@ -14,7 +14,7 @@ class Index extends PureComponent {
     const { posts = [] } = this.props;
     return (
       <div style={{ padding: '10px 45px' }}>
-        <h1>Thoughts</h1>
+        <PageTitle>Thoughts</PageTitle>
         {posts.map(
           ({ _id, title = '', slug = '', _updatedAt = '' }) =>
             slug && (
