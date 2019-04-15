@@ -4,14 +4,44 @@ import BlockContent from '@sanity/block-content-to-react';
 import imageUrlBuilder from '@sanity/image-url';
 import Error from 'next/error';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Link } from '../routes';
 import client from '../client';
 import withLayout from '../lib/withLayout';
 import CommaJoiner from '../components/CommaJoiner';
+import PageTitle from '../components/styled/PageTitle';
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
+
+const Post = styled.div`
+  padding: 10px 45px;
+
+  p {
+    color: rgb(76, 79, 90);
+    padding-top: 20px;
+    max-width: 700px;
+    font-size: 1.6rem;
+    line-height: 1.4em;
+    font-weight: 400;
+  }
+`;
+
+const PostInfo = styled.div`
+  margin: 1rem 0 2rem 0;
+  color: rgb(85, 85, 85);
+`;
+
+const AuthoInfo = styled.div`
+  display: flex;
+  align-items: center;
+
+  p {
+    padding: 0 0 0 1rem;
+    font-size: 1rem;
+  }
+`;
 
 class Thought extends PureComponent {
   static getInitialProps = async ({ res, query: { slug } }) => {
@@ -47,22 +77,25 @@ class Thought extends PureComponent {
     }
 
     return (
-      <div style={{ padding: '10px 45px' }}>
-        <h1>{title}</h1>
-        By {name}. Updated {format(_updatedAt, 'DD. MMMM, YYYY')}.{' '}
-        {categories.length > 0 && (
-          <span>
-            Posted in <CommaJoiner list={categories} />
-          </span>
-        )}
-        <div>
-          <img
-            src={urlFor(authorImage)
-              .width(50)
-              .url()}
-            alt="Author Profile"
-          />
-        </div>
+      <Post>
+        <PageTitle>{title}</PageTitle>
+        <PostInfo>
+          Updated {format(_updatedAt, 'DD. MMMM, YYYY')}.{' '}
+          {categories.length > 0 && (
+            <span>
+              Posted in <CommaJoiner list={categories} />
+            </span>
+          )}
+          <AuthoInfo>
+            <img
+              src={urlFor(authorImage)
+                .width(40)
+                .url()}
+              alt="Author Profile"
+            />
+            <p>By {name}.</p>
+          </AuthoInfo>
+        </PostInfo>
         <BlockContent
           blocks={body}
           imageOptions={{ w: 320, h: 240, fit: 'max' }}
@@ -72,7 +105,7 @@ class Thought extends PureComponent {
         <Link route="/">
           <a>Back to home</a>
         </Link>
-      </div>
+      </Post>
     );
   }
 }

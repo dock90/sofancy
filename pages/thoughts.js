@@ -12,7 +12,6 @@ import media from '../components/styled/Media';
 
 const StyledCard = styled(Card)`
   display: flex;
-  flex: 1;
   justify-content: center;
   align-items: center;
   min-height: 200px;
@@ -26,6 +25,11 @@ const StyledCard = styled(Card)`
     font-weight: 300;
     font-size: 2rem;
     line-height: 1.3em;
+
+    a {
+      text-decoration: none;
+      color: #4c4f5a;
+    }
   }
 `;
 
@@ -52,11 +56,10 @@ class Index extends PureComponent {
                 >
                   <StyledCard elevation={4}>
                     <Link prefetch route={`/thoughts/${slug.current}`}>
-                      <h4>
+                      <h2>
                         <a>{title}</a>
-                      </h4>
-                    </Link>{' '}
-                    ({format(_updatedAt, 'DD. MMMM, YYYY')})
+                      </h2>
+                    </Link>
                   </StyledCard>
                 </Grid>
               )
