@@ -2,6 +2,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
 import { Link } from '../routes';
+import media from "./styled/Media";
 
 import { styleToolbar } from './styled/SharedStyles';
 
@@ -13,18 +14,22 @@ const NavLink = styled.a`
   text-decoration: none;
   font-size: 1.2rem;
   font-family: Roboto, Oxygen, Ubuntu, 'Open Sans', sans-serif;
+
+  ${media.phone`
+  margin: 0px 10px 0px auto;
+  `}
 `;
 
 const Header = () => (
   <div>
     <Toolbar style={styleToolbar}>
       <Grid container direction="row" justify="space-between" align="center">
-        <Grid item sm={1} xs={3} style={{ textAlign: 'left' }}>
+        <Grid item sm={1} xs={2} style={{ textAlign: 'left' }}>
           <Link prefetch route="/">
             <NavLink>dock90</NavLink>
           </Link>
         </Grid>
-        <Grid item sm={9} xs={3} style={{ textAlign: 'right' }}>
+        <Grid item sm={9} xs={10} style={{ textAlign: 'right' }}>
           {/* <Link prefetch route="/services">
             <NavLink>services</NavLink>
           </Link> */}

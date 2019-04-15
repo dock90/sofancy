@@ -21,12 +21,12 @@ const Intro = styled.h1`
   line-height: 1.3em;
 
   ${media.phone`
-    width: 80%;
+    width: 100%;
   `}
 `;
 
 const AltIntro = styled.h2`
-  padding: 0 0 6rem 0;
+  padding: 0 0 2.2rem 0;
   width: 50%;
 
   ${media.phone`
@@ -58,20 +58,20 @@ const Index = () => (
       <title>Product Design and Engineering Studio | dock90</title>
       <meta
         name="description"
-        content="Dock90 is a product design studio. We help privately funded SaaS startups figure out where to start and what to build next."
+        content="At dock90 we build tools that that help companies with complex systems increase efficiency and manage their resources better."
       />
     </Head>
-    <Intro>
+    {/* <Intro>
       At dock90 we help privately funded SaaS startups figure out where to start
       and what to build next.
-    </Intro>
-    {/* <Intro>
-      At dock90 we build tools and processes for companies with complex systems
-      looking to increase efficiency and manage their resources better.
     </Intro> */}
+    <Intro>
+      At dock90 we build tools that that help companies with complex systems increase efficiency and manage their resources better.
+    </Intro>
     <AltIntro>
-      Unlike other studios, we focus on building what will make the most impact
-      instead of wasting your time building your wishlist of features.
+      Unlike other product design studios, we focus on building what will make
+      the most impact instead of wasting your time building a wishlist of
+      features.
     </AltIntro>
     {/* <Grid container direction="row" align="center">
       <Grid
