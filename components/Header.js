@@ -31,6 +31,9 @@ const Header = () => (
           <Link prefetch route="/thoughts">
             <NavLink>thoughts</NavLink>
           </Link>
+          <Link prefetch route="/start">
+            <NavLink>start a project</NavLink>
+          </Link>
         </Grid>
       </Grid>
     </Toolbar>

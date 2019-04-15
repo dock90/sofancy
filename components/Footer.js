@@ -1,9 +1,9 @@
-import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
+import media from './styled/Media';
 
 const FooterWrapper = styled.div`
   text-align: center;
-  padding: 100px 45px;
+  padding: 100px 45px 0 45px;
   background: rgb(250, 250, 250) none repeat scroll 0% 0%;
   font-weight: 500;
 `;
@@ -14,6 +14,10 @@ const FooterIntro = styled.h2`
   font-size: 4rem;
   text-align: left;
   color: rgb(76, 79, 90);
+
+  ${media.phone`
+    line-height: 4rem;
+  `}
 `;
 
 const ContactInfo = styled.p`
