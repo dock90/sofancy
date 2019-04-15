@@ -6,6 +6,7 @@ const PageTitle = styled.h1`
   font-size: 2.7rem;
   text-align: left;
   color: rgb(76, 79, 90);
+  padding-bottom: 2rem;
 `;
 
 export default PageTitle;
