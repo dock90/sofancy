@@ -1,13 +1,13 @@
+import { format } from 'date-fns';
 import React, { PureComponent } from 'react';
 import BlockContent from '@sanity/block-content-to-react';
 import imageUrlBuilder from '@sanity/image-url';
-import { format } from 'date-fns';
 import Error from 'next/error';
 import PropTypes from 'prop-types';
-import { Link } from '../../routes';
-import client from '../../client';
-import withLayout from '../../lib/withLayout';
-import CommaJoiner from '../../components/CommaJoiner';
+import { Link } from '../routes';
+import client from '../client';
+import withLayout from '../lib/withLayout';
+import CommaJoiner from '../components/CommaJoiner';
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);

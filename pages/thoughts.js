@@ -4,14 +4,15 @@ import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import styled from 'styled-components';
-import { Link } from '../../routes';
-import client from '../../client';
-import withLayout from '../../lib/withLayout';
-import PageTitle from '../../components/styled/PageTitle'
-import media from '../../components/styled/Media';
+import { Link } from '../routes';
+import client from '../client';
+import withLayout from '../lib/withLayout';
+import PageTitle from '../components/styled/PageTitle';
+import media from '../components/styled/Media';
 
 const StyledCard = styled(Card)`
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   min-height: 200px;
@@ -51,7 +52,9 @@ class Index extends PureComponent {
                 >
                   <StyledCard elevation={4}>
                     <Link prefetch route={`/thoughts/${slug.current}`}>
-                      <a>{title}</a>
+                      <h4>
+                        <a>{title}</a>
+                      </h4>
                     </Link>{' '}
                     ({format(_updatedAt, 'DD. MMMM, YYYY')})
                   </StyledCard>
