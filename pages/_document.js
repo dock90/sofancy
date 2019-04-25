@@ -12,7 +12,10 @@ class MyDocument extends Document {
           />
           <meta name="google" content="notranslate" />
           <meta name="theme-color" content="#1976D2" />
-
+          <meta
+            name="google-site-verification"
+            content="ZTztg7eW1F-SgGWKcbnJGap0GmkmJDKHWnoYXvMmqAk"
+          />
           <link
             rel="shortcut icon"
             href="https://storage.googleapis.com/builderbook/favicon32.png"
