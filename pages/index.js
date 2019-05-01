@@ -58,7 +58,7 @@ const Index = () => (
       <title>Product Design and Engineering Studio | dock90</title>
       <meta
         name="description"
-        content="At dock90 we build tools that that help companies with complex systems increase efficiency and manage their resources better."
+        content="At dock90 we build tools that increase efficiency and better manage resources for companies with complex systems."
       />
     </Head>
     {/* <Intro>
@@ -66,11 +66,11 @@ const Index = () => (
       and what to build next.
     </Intro> */}
     <Intro>
-      At dock90 we build tools that that help companies with complex systems increase efficiency and manage their resources better.
+      At dock90 we build tools that increase efficiency and better manage
+      resources for companies with complex systems.
     </Intro>
     <AltIntro>
-      Unlike other product design studios, we focus on building what will make
-      the most impact instead of wasting your time building a wishlist of
+      We focus on business impact and don't waste time building unnecessary
       features.
     </AltIntro>
     {/* <Grid container direction="row" align="center">
