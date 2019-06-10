@@ -41,7 +41,7 @@ class MyDocument extends Document {
             {`
               a, a:focus {
                 font-weight: 400;
-                color: #1565C0;
+                color: #0872a1;
                 text-decoration: none;
                 outline: none
               }

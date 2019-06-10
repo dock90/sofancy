@@ -1,11 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
 import withLayout from '../lib/withLayout';
 import media from '../components/styled/Media';
+import { Link } from '../routes';
 
+// styles
 const MainWrapper = styled.div`
   max-width: 1600px;
   margin: 0px 40px;
@@ -16,7 +16,7 @@ const Intro = styled.h1`
   font-size: 2.7rem;
   font-family: 'Roboto', sans-serif;
   color: rgb(76, 79, 90);
-  width: 50%;
+  width: 60%;
   font-weight: 300;
   line-height: 1.3em;
 
@@ -25,8 +25,52 @@ const Intro = styled.h1`
   `}
 `;
 
-const AltIntro = styled.h2`
-  padding: 0 0 2.2rem 0;
+const FollowUp = styled.h2`
+  padding: 6rem 0 2rem 0;
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(76, 79, 90);
+  width: 60%;
+  font-weight: 300;
+  line-height: 1.3em;
+
+  ${media.phone`
+    width: 100%;
+  `}
+`;
+
+const SectionHeader = styled.h2`
+  padding: 6rem 0 0 0;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(76, 79, 90);
+  width: 60%;
+  font-weight: 300;
+  line-height: 1.3em;
+
+  ${media.phone`
+    width: 100%;
+  `}
+`;
+
+const SectionDetails = styled.h2`
+  padding: 2rem 0 0 0;
+  font-size: 4rem;
+    line-height: 1.3em;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(76, 79, 90);
+  width: 80%;
+
+  ${media.phone`
+    width: 100%;
+  `}
+`;
+
+const SectionSubdetails = styled.h2`
+  padding: 0;
+  color: rgb(76, 79, 90);
+  font-weight: 300;
+  line-height: 1.5em;
   width: 50%;
 
   ${media.phone`
@@ -34,22 +78,22 @@ const AltIntro = styled.h2`
   `}
 `;
 
-const StyledCard = styled(Card)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-  border-radius: 0 !important;
-  ${media.phone`
-    margin-bottom: 1rem;
-  `}
+const AltIntro = styled.h2`
+  padding: 0 0 2.2rem 0;
+  line-height: 1.5em;
+  width: 60%;
 
-  h2 {
-    margin: 1rem;
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 1.3em;
-  }
+  ${media.phone`
+    width: 100%;
+  `}
+`;
+
+const NavLink = styled.a`
+  color: #0872a1;
+  font-size: 4rem;
+  font-weight: 600;
+  transition: all 100ms ease 0s;
+  text-decoration: none;
 `;
 
 const Index = () => (
@@ -61,30 +105,42 @@ const Index = () => (
         content="At dock90 we build tools that increase efficiency and better manage resources for companies with complex systems."
       />
     </Head>
-    {/* <Intro>
-      At dock90 we help privately funded SaaS startups figure out where to start
-      and what to build next.
-    </Intro> */}
     <Intro>
-      At dock90 we build tools that increase efficiency and better manage
-      resources for companies with complex systems.
+      Are you dealing with fragmented systems?
+      <br />
+      Struggling with inefficiency?
+      <br />
+      Processes no longer scaling with your team?
     </Intro>
+    <FollowUp>
+      At dock90 we build tools for small businesses of 5-20 people that increase
+      efficiency and better manage resources.
+    </FollowUp>
     <AltIntro>
       We focus on business impact and don't waste time building unnecessary
       features.
     </AltIntro>
-    {/* <Grid container direction="row" align="center">
-      <Grid
-        item
-        sm={3}
-        xs={12}
-        style={{ marginRight: '1.5rem', textAlign: 'left' }}
-      >
-        <StyledCard elevation={4}>
-          <h2>strategy</h2>
-        </StyledCard>
-      </Grid>
-    </Grid> */}
+    <SectionHeader>How do we help?</SectionHeader>
+    <SectionDetails>Start: Product Roadmap</SectionDetails>
+    <SectionSubdetails>
+      We take the time to understand your business, customers and problem.
+      Working together we generate new ideas and converge on a solution. To wrap
+      it up we polish everything into a document outlining all our discussions
+      giving you the tools you need to move forward.
+    </SectionSubdetails>
+    <SectionDetails>Then: Solve Problem</SectionDetails>
+    <SectionSubdetails>
+      Use the Product Roadmap we implement the solution freeing up the way for
+      unity and scaling. We follow up consistently to make sure our
+      implementation was a good fit and are there to help you as needed.
+    </SectionSubdetails>
+    <SectionHeader>Next Steps?</SectionHeader>
+    <SectionDetails>
+      Sound like a good fit?
+      <Link prefetch route="/start">
+        <NavLink> Start a Project</NavLink>
+      </Link>
+    </SectionDetails>
   </MainWrapper>
 );
 

@@ -3,7 +3,7 @@ import media from './styled/Media';
 
 const FooterWrapper = styled.div`
   text-align: center;
-  padding: 100px 45px 0 45px;
+  padding: 100px 45px 20px 45px;
   background: rgb(250, 250, 250) none repeat scroll 0% 0%;
   font-weight: 500;
 `;
@@ -31,11 +31,18 @@ const ContactInfo = styled.p`
 
 const Footer = () => (
   <FooterWrapper>
-    <FooterIntro>Say Hello</FooterIntro>
+    {/* <FooterIntro>Say Hello</FooterIntro> */}
     <ContactInfo>
       Currently Located At:
       <br />
       The Candy Factory
+    </ContactInfo>
+    <ContactInfo>
+      342 N Queen St, Rear
+      <br />
+      Warehouse D
+      <br />
+      Lancaster, PA 17603
     </ContactInfo>
     <ContactInfo>
       hello@dock90.io
