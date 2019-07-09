@@ -33,7 +33,7 @@ const PostInfo = styled.div`
   color: rgb(85, 85, 85);
 `;
 
-const AuthoInfo = styled.div`
+const AuthorInfo = styled.div`
   display: flex;
   align-items: center;
 
@@ -86,7 +86,7 @@ class Thought extends PureComponent {
               Posted in <CommaJoiner list={categories} />
             </span>
           )}
-          <AuthoInfo>
+          <AuthorInfo>
             <img
               src={urlFor(authorImage)
                 .width(40)
@@ -94,7 +94,7 @@ class Thought extends PureComponent {
               alt="Author Profile"
             />
             <p>By {name}.</p>
-          </AuthoInfo>
+          </AuthorInfo>
         </PostInfo>
         <BlockContent
           blocks={body}
