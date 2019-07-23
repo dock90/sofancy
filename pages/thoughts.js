@@ -1,32 +1,22 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
+
 import styled from 'styled-components';
 import client from '../client';
 import withLayout from '../lib/withLayout';
 import PageTitle from '../components/styled/PageTitle';
 import media from '../components/styled/Media';
 
-const StyledCard = styled(Card)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-  border-radius: 0 !important;
-  ${media.phone`
-    margin-bottom: 1rem;
-  `}
-
+const PostTitle = styled.div`
   h2 {
-    margin: 1rem;
+    margin-bottom: 1rem;
     font-weight: 300;
     font-size: 2rem;
     line-height: 1.3em;
 
     a {
       text-decoration: none;
-      color: #4c4f5a;
     }
   }
 `;
@@ -40,20 +30,14 @@ function Index(props) {
         {posts.map(
           ({ _id, title = '', slug = '' }) =>
             slug && (
-              <Grid
-                item
-                sm={3}
-                xs={12}
-                style={{ marginRight: '1.5rem', textAlign: 'left' }}
-                key={_id}
-              >
-                <StyledCard elevation={4}>
+              <Grid item xs={12} style={{ textAlign: 'left' }} key={_id}>
+                <PostTitle>
                   <Link prefetch href={`/thought/${slug.current}`}>
                     <h2>
                       <a>{title}</a>
                     </h2>
                   </Link>
-                </StyledCard>
+                </PostTitle>
               </Grid>
             )
         )}

@@ -6,39 +6,10 @@ import BlockContent from '@sanity/block-content-to-react';
 import styled from 'styled-components';
 import client from '../client';
 import withLayout from '../lib/withLayout';
-import PageTitle from '../components/styled/PageTitle';
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
-
-const Post = styled.article`
-  padding: 10px 45px;
-
-  p {
-    color: rgb(76, 79, 90);
-    padding-top: 20px;
-    max-width: 700px;
-    font-size: 1.6rem;
-    line-height: 1.4em;
-    font-weight: 400;
-  }
-`;
-
-const PostInfo = styled.div`
-  margin: 1rem 0 2rem 0;
-  color: rgb(85, 85, 85);
-`;
-
-const AuthorInfo = styled.div`
-  display: flex;
-  align-items: center;
-
-  p {
-    padding: 0 0 0 1rem;
-    font-size: 1rem;
-  }
-`;
 
 function Thought(props) {
   const {
@@ -49,18 +20,53 @@ function Thought(props) {
     body = [],
   } = props;
   return (
-    <Post>
-      <PageTitle>{title}</PageTitle>
-      <PostInfo>
+    <article style={{ margin: '0px 40px' }}>
+      <h1
+        style={{
+          textTransform: 'uppercase',
+          fontFamily: 'Roboto, Oxygen, Ubuntu, Open Sans, sans-serif',
+          fontSize: '2.7rem',
+          textAlign: 'left',
+          color: 'rgb(76, 79, 90)',
+          padding: '6rem 0 2rem 0',
+          lineHeight: '3rem',
+        }}
+      >
+        {title}
+      </h1>
+      <div
+        style={{
+          margin: '1rem 0 2rem 0',
+          color: 'rgb(85, 85, 85)',
+        }}
+      >
         {categories && (
-          <ul>
-            Posted in
+          <ul
+            style={{
+              display: 'flex',
+              marginLeft: '-2.5rem',
+            }}
+          >
+            Posted in:
             {categories.map(category => (
-              <li key={category}>{category}</li>
+              <li
+                style={{
+                  paddingLeft: '1rem',
+                  listStyle: 'none',
+                }}
+                key={category}
+              >
+                *{category}
+              </li>
             ))}
           </ul>
         )}
-        <AuthorInfo>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
           {authorImage && (
             <div>
               <img
@@ -71,20 +77,25 @@ function Thought(props) {
               />
             </div>
           )}
-          <p>By {name}.</p>
-        </AuthorInfo>
-      </PostInfo>
+          <p
+            style={{
+              padding: '0 0 0 1rem',
+              fontSize: '1rem',
+            }}
+          >
+            By {name}.
+          </p>
+        </div>
+      </div>
       <BlockContent
         blocks={body}
         imageOptions={{ w: 320, h: 240, fit: 'max' }}
         {...client.config()}
-        // projectId={client.clientConfig.projectId}
-        // dataset={client.clientConfig.dataset}
       />
       <Link prefetch href="/">
         <a>Back to home</a>
       </Link>
-    </Post>
+    </article>
   );
 }
 

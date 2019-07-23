@@ -39,6 +39,18 @@ class MyDocument extends Document {
 
           <style>
             {`
+              article h2 {
+                font-size: 2rem;
+              }
+
+              article p {
+                color: rgb(76, 79, 90);
+                font-size: 1.4rem;
+                line-height: 2rem;
+                font-weight: 400px;
+                padding-bottom: 15px;
+                max-width: 700px;
+              }
               a, a:focus {
                 font-weight: 400;
                 color: #0872a1;
