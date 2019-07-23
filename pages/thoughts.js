@@ -48,7 +48,7 @@ function Index(props) {
                 key={_id}
               >
                 <StyledCard elevation={4}>
-                  <Link prefetch href={`/thoughts/${slug.current}`}>
+                  <Link prefetch href={`/thought/${slug.current}`}>
                     <h2>
                       <a>{title}</a>
                     </h2>
