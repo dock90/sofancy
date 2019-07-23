@@ -1,8 +1,8 @@
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
-import { Link } from '../routes';
-import media from "./styled/Media";
+import Link from 'next/link';
+import media from './styled/Media';
 
 import { styleToolbar } from './styled/SharedStyles';
 
@@ -25,18 +25,18 @@ const Header = () => (
     <Toolbar style={styleToolbar}>
       <Grid container direction="row" justify="space-between" align="center">
         <Grid item sm={1} xs={2} style={{ textAlign: 'left' }}>
-          <Link prefetch route="/">
+          <Link prefetch href="/">
             <NavLink>dock90</NavLink>
           </Link>
         </Grid>
         <Grid item sm={9} xs={10} style={{ textAlign: 'right' }}>
-          {/* <Link prefetch route="/services">
+          {/* <Link prefetch href="/services">
             <NavLink>services</NavLink>
           </Link> */}
-          <Link prefetch route="/thoughts">
+          <Link prefetch href="/thoughts">
             <NavLink>thoughts</NavLink>
           </Link>
-          <Link prefetch route="/start">
+          <Link prefetch href="/start">
             <NavLink>start a project</NavLink>
           </Link>
         </Grid>

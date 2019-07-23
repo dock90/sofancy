@@ -2926,6 +2926,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.4
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
   integrity sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
 
+groq@^0.141.5:
+  version "0.141.5"
+  resolved "https://registry.yarnpkg.com/groq/-/groq-0.141.5.tgz#72bd2501cddefca9609d4bd8cd1ab6836368bdbd"
+  integrity sha512-o/232L2hI+1sdGHIIdHVQbzL+y9C+Pa8w3h0fs8dulEnpsXV3D+iR+fG5aY8xa+DoZOteFANd2ksaK44qVvieQ==
+
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"

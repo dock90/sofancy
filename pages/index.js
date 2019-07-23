@@ -1,9 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
+import Link from 'next/link';
 import withLayout from '../lib/withLayout';
 import media from '../components/styled/Media';
-import { Link } from '../routes';
 
 // styles
 const MainWrapper = styled.div`
@@ -56,7 +56,7 @@ const SectionHeader = styled.h2`
 const SectionDetails = styled.h2`
   padding: 2rem 0 0 0;
   font-size: 4rem;
-    line-height: 1.3em;
+  line-height: 1.3em;
   font-family: 'Roboto', sans-serif;
   color: rgb(76, 79, 90);
   width: 80%;
@@ -137,7 +137,7 @@ const Index = () => (
     <SectionHeader>Next Steps?</SectionHeader>
     <SectionDetails>
       Sound like a good fit?
-      <Link prefetch route="/start">
+      <Link prefetch href="/start">
         <NavLink> Start a Project</NavLink>
       </Link>
     </SectionDetails>
