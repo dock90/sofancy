@@ -26,7 +26,19 @@ const Header = () => (
       <Grid container direction="row" justify="space-between" align="center">
         <Grid item sm={1} xs={2} style={{ textAlign: 'left' }}>
           <Link prefetch href="/">
-            <NavLink>dock90</NavLink>
+            <a
+              style={{
+                color: '#4c4f5a',
+                margin: '0px 20px 0px auto',
+                padding: '5px 10px',
+                transition: 'all 100ms ease 0s',
+                textDecoration: 'none',
+                fontSize: '1.2rem',
+                fontFamily: 'Roboto, Oxygen, Ubuntu, Open Sans, sans-serif',
+              }}
+            >
+              dock90
+            </a>
           </Link>
         </Grid>
         <Grid item sm={9} xs={10} style={{ textAlign: 'right' }}>
