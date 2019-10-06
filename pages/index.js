@@ -102,7 +102,8 @@ const Index = () => (
       <title>Product Design and Engineering Studio | dock90</title>
       <meta
         name="description"
-        content="At dock90 we build tools that increase efficiency and better manage resources for companies with complex systems."
+        content="At dock90 we build tools for small businesses that increase efficiency and
+      better manage resources."
       />
     </Head>
     <Intro>
@@ -113,8 +114,8 @@ const Index = () => (
       Processes no longer scaling with your team?
     </Intro>
     <FollowUp>
-      At dock90 we build tools for small businesses of 5-20 people that increase
-      efficiency and better manage resources.
+      At dock90 we build tools for small businesses that increase efficiency and
+      better manage resources.
     </FollowUp>
     <AltIntro>
       We focus on business impact and don't waste time building unnecessary
