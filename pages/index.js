@@ -102,38 +102,43 @@ const Index = () => (
       <title>Product Design and Engineering Studio | dock90</title>
       <meta
         name="description"
-        content="At dock90 we build tools for small businesses that increase efficiency and
-      better manage resources."
+        content="Strategy, product design and engineering with a focus on simplicity."
       />
     </Head>
     <Intro>
-      Are you dealing with fragmented systems?
+      Strategy.
       <br />
-      Struggling with inefficiency?
+      Product Design.
       <br />
-      Processes no longer scaling with your team?
+      Engineering.
     </Intro>
+    <AltIntro>Welcome to dock90.</AltIntro>
     <FollowUp>
-      At dock90 we build tools for small businesses that increase efficiency and
-      better manage resources.
+      We help businesses better manage resources and scale by understanding
+      their problems, and build tools to solve them.
     </FollowUp>
-    <AltIntro>
-      We focus on business impact and don't waste time building unnecessary
-      features.
-    </AltIntro>
-    <SectionHeader>How do we help?</SectionHeader>
+    <SectionHeader>How do we do this?</SectionHeader>
     <SectionDetails>Start: Product Roadmap</SectionDetails>
     <SectionSubdetails>
-      We take the time to understand your business, customers and problem.
+      We take the time to understand your business, customers and problems.
       Working together we generate new ideas and converge on a solution. To wrap
       it up we polish everything into a document outlining all our discussions
       giving you the tools you need to move forward.
     </SectionSubdetails>
-    <SectionDetails>Then: Solve Problem</SectionDetails>
+    <SectionDetails>Then: MVP (Minimal Viable Product)</SectionDetails>
     <SectionSubdetails>
-      Use the Product Roadmap we implement the solution freeing up the way for
-      unity and scaling. We follow up consistently to make sure our
-      implementation was a good fit and are there to help you as needed.
+      Using the Product Roadmap we implement the core solution into a usable
+      product with a focus on essential features. We validate our findings and
+      compare results to expected goals. We make sure we are in alignment with
+      the overall mission and review outcomes based on insights gained from real
+      user feedback.
+    </SectionSubdetails>
+    <SectionDetails>Finally: Wrap It Up</SectionDetails>
+    <SectionSubdetails>
+      With a proven MVP that validates our assumptions and solves the core
+      problem we set out to tackle, we work on building the entire product. End
+      result? A solution focused on simplicity that is in alignment with your
+      company vision and solves your problems.
     </SectionSubdetails>
     <SectionHeader>Next Steps?</SectionHeader>
     <SectionDetails>

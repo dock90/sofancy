@@ -33,6 +33,9 @@ const Header = () => (
           {/* <Link prefetch href="/services">
             <NavLink>services</NavLink>
           </Link> */}
+          <Link prefetch href="/work">
+            <NavLink>work</NavLink>
+          </Link>
           <Link prefetch href="/thoughts">
             <NavLink>thoughts</NavLink>
           </Link>
