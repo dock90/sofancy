@@ -115,7 +115,7 @@ const Index = () => (
     <AltIntro>Welcome to dock90.</AltIntro>
     <FollowUp>
       We help businesses better manage resources and scale by understanding
-      their problems, and build tools to solve them.
+      their problems, and build software tools to solve them.
     </FollowUp>
     <SectionHeader>How do we do this?</SectionHeader>
     <SectionDetails>Start: Product Roadmap</SectionDetails>
