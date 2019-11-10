@@ -58,9 +58,9 @@ const NavLink = styled.a`
 const Index = () => (
   <MainWrapper>
     <Intro>
-      Simplify complex workflows.
+      We help companies improve operational efficiency by building work
+      management tools.
       <br />
-      That is our mission.
     </Intro>
     <AltIntro>Welcome to dock90.</AltIntro>
 
