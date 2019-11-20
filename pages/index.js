@@ -58,7 +58,7 @@ const NavLink = styled.a`
 const Index = () => (
   <MainWrapper>
     <Intro>
-      We help companies improve operational efficiency by building work
+      I help companies improve operational efficiency by building work
       management tools.
       <br />
     </Intro>
