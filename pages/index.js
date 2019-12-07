@@ -58,11 +58,11 @@ const NavLink = styled.a`
 const Index = () => (
   <MainWrapper>
     <Intro>
-      I help companies improve operational efficiency by building work
-      management tools.
+      I help fast growing companies scale up to meet exponentially increasing
+      customer demands.
       <br />
     </Intro>
-    <AltIntro>Welcome to dock90.</AltIntro>
+    {/* <AltIntro>Welcome to dock90.</AltIntro> */}
 
     <SectionDetails>
       Sound like a good fit?

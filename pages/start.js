@@ -19,9 +19,9 @@ const ActionItem = styled.h1`
 
 const Start = () => (
   <Action>
-    <h2>Send a message:</h2>
+    <h2>Send me a message:</h2>
     <ActionItem>
-      <a href="mailto:hello@dock90.io">hello@dock90.io</a>
+      <a href="mailto:edward@dock90.io">edward@dock90.io</a>
     </ActionItem>
   </Action>
 );

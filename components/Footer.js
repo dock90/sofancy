@@ -45,7 +45,7 @@ const Footer = () => (
       Lancaster, PA 17603
     </ContactInfo>
     <ContactInfo>
-      hello@dock90.io
+      edward@dock90.io
       <br />
     </ContactInfo>
   </FooterWrapper>
