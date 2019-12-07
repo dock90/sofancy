@@ -8,14 +8,31 @@ import media from '../components/styled/Media';
 const MainWrapper = styled.div`
   max-width: 1600px;
   margin: 0px 40px;
+  font-family: 'Roboto', sans-serif;
 `;
 
 const Intro = styled.h1`
-  padding: 6rem 0 2rem 0;
-  font-size: 2.7rem;
-  font-family: 'Roboto', sans-serif;
+  padding: 2rem 0 1rem 0;
+  font-size: 3rem;
   color: rgb(76, 79, 90);
-  width: 60%;
+  width: 80%;
+  font-weight: 500;
+  line-height: 1.3em;
+
+  ${media.tablet`
+    width: 90%;
+  `}
+
+  ${media.phone`
+    width: 100%;
+  `}
+`;
+
+const AltIntro = styled.h2`
+  padding: 3rem 0 2rem 0;
+  font-size: 2.7rem;
+  color: rgb(76, 79, 90);
+  width: 70%;
   font-weight: 300;
   line-height: 1.3em;
 
@@ -24,23 +41,12 @@ const Intro = styled.h1`
   `}
 `;
 
-const SectionDetails = styled.h2`
+const SectionDetails = styled.h3`
   padding: 2rem 0 0 0;
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1.3em;
-  font-family: 'Roboto', sans-serif;
   color: rgb(76, 79, 90);
   width: 80%;
-
-  ${media.phone`
-    width: 100%;
-  `}
-`;
-
-const AltIntro = styled.h2`
-  padding: 0 0 2.2rem 0;
-  line-height: 1.5em;
-  width: 60%;
 
   ${media.phone`
     width: 100%;
@@ -58,18 +64,18 @@ const NavLink = styled.a`
 const Index = () => (
   <MainWrapper>
     <Intro>
+      Are you worried your current systems wont scale as you grow your business?
+    </Intro>
+    <AltIntro>
       I help fast growing companies scale up to meet exponentially increasing
       customer demands.
       <br />
-    </Intro>
-    {/* <AltIntro>Welcome to dock90.</AltIntro> */}
+    </AltIntro>
 
-    <SectionDetails>
-      Sound like a good fit?
-      <Link href="/start">
-        <NavLink> Start a Project</NavLink>
-      </Link>
-    </SectionDetails>
+    <SectionDetails>Interested in learning more?</SectionDetails>
+    <Link href="/start">
+      <NavLink> Get in Touch</NavLink>
+    </Link>
   </MainWrapper>
 );
 
