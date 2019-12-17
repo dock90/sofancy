@@ -35,11 +35,11 @@ const Header = () => (
           </Link> */}
           {/* <Link prefetch href="/work">
             <NavLink>work</NavLink>
-          </Link>
+          </Link> */}
           <Link prefetch href="/thoughts">
             <NavLink>thoughts</NavLink>
           </Link>
-          <Link prefetch href="/start">
+          {/* <Link prefetch href="/start">
             <NavLink>start a project</NavLink>
           </Link> */}
         </Grid>
