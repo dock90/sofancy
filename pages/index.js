@@ -44,7 +44,7 @@ const AltIntro = styled.h2`
 const SectionDetails = styled.h3`
   padding: 2rem 0 0 0;
   font-size: 2rem;
-  line-height: 1.3em;
+  line-height: 1.5em;
   color: rgb(76, 79, 90);
   width: 80%;
 
@@ -59,32 +59,17 @@ const NavLink = styled.a`
   font-weight: 600;
   transition: all 100ms ease 0s;
   text-decoration: none;
+  line-height: 4rem;
+
+  ${media.phone`
+    font-size: 3rem;
+  `}
 `;
 
 const Index = () => (
   <MainWrapper>
-    <Intro>"There has got to be a better way to do this."</Intro>
-    <AltIntro>
-      Ever catch yourself saying that? What if you could find out, today, that
-      there was a better way - what would that look like?
-    </AltIntro>
-    <AltIntro>
-      More time with your kids?
-      <br />
-      Better employee engagement?
-      <br />
-      Less copying and pasting from one Excel sheet into another?
-    </AltIntro>
-    <Intro>Good news - there is a better way, and you are not alone.</Intro>
-    <AltIntro>
-      At dock90 I help people like you find solutions to everday problems.
-      <br />
-      <br />
-      We work together to streamline your processes, modernize the tools you
-      use, and bring your ideas to life.
-    </AltIntro>
-
-    <SectionDetails>Want to see what we can come up with?</SectionDetails>
+    <Intro>Coming Soon</Intro>
+    <SectionDetails>Have a Project?</SectionDetails>
     <Link href="/start">
       <NavLink>Send Me an Email</NavLink>
     </Link>
