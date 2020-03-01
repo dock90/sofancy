@@ -63,18 +63,30 @@ const NavLink = styled.a`
 
 const Index = () => (
   <MainWrapper>
-    <Intro>
-      Are you worried your current systems wont scale as you grow your business?
-    </Intro>
+    <Intro>"There has got to be a better way to do this."</Intro>
     <AltIntro>
-      I help fast growing companies scale up to meet exponentially increasing
-      customer demands.
+      Ever catch yourself saying that? What if you could find out, today, that
+      there was a better way - what would that look like?
+    </AltIntro>
+    <AltIntro>
+      More time with your kids?
       <br />
+      Better employee engagement?
+      <br />
+      Less copying and pasting from one Excel sheet into another?
+    </AltIntro>
+    <Intro>Good news - there is a better way, and you are not alone.</Intro>
+    <AltIntro>
+      At dock90 I help people like you find solutions to everday problems.
+      <br />
+      <br />
+      We work together to streamline your processes, modernize the tools you
+      use, and bring your ideas to life.
     </AltIntro>
 
-    <SectionDetails>Interested in learning more?</SectionDetails>
+    <SectionDetails>Want to see what we can come up with?</SectionDetails>
     <Link href="/start">
-      <NavLink> Get in Touch</NavLink>
+      <NavLink>Send Me an Email</NavLink>
     </Link>
   </MainWrapper>
 );
