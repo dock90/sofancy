@@ -16,7 +16,7 @@ const Intro = styled.div`
 const Home = () => (
   <div>
     <Head>
-      <title>Dock90 - Web App Development Studio</title>
+      <title>Dock90 | Web App Development Studio</title>
     </Head>
     <Header />
     <Body>
