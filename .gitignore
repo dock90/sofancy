@@ -1,15 +1,35 @@
-*~
-*.swp
-tmp/
-npm-debug.log
-.DS_Store
-
-
-.build/*
-.next
-.vscode/
-node_modules/
-.coverage
+## env
 .env
+
+# build output
+dist
 .next
-out
+
+# dependencies
+node_modules
+package-lock.json
+yarn.lock
+!/yarn.lock
+test/node_modules
+
+# logs & pids
+*.log
+pids
+
+# coverage
+.nyc_output
+coverage
+
+# test output
+test/**/out*
+test/**/next-env.d.ts
+
+# Editors
+**/.idea
+.vscode
+
+# example output
+examples/**/out
+
+## mac
+.DS_Store

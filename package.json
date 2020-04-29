@@ -1,50 +1,25 @@
 {
-  "name": "sofancy",
-  "version": "0.0.5",
-  "description": "This is dock90. No frills.",
+  "name": "dock90",
+  "version": "1.0.0",
+  "description": "Website for Dock90 LLC - a web app development studio.",
   "main": "index.js",
-  "repository": "git@github.com:dock90/oh-so-fancy.git",
+  "repository": "git@github.com:dock90/sofancy.git",
   "author": "EdwardGoomba <edward@dock90.io>",
   "license": "MIT",
   "private": false,
   "scripts": {
     "dev": "next",
-    "dev server": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "lint": "eslint pages",
+    "start": "next start",
     "export": "yarn build && next export"
   },
   "dependencies": {
-    "@material-ui/core": "^4.5.1",
-    "@material/card": "^3.2.0",
-    "@material/elevation": "^3.1.0",
-    "@sanity/block-content-to-react": "^2.0.7",
-    "@sanity/client": "^0.142.6",
-    "@sanity/image-url": "^0.140.15",
-    "date-fns": "^2.6.0",
-    "express": "^4.17.1",
-    "groq": "^0.142.0",
-    "http": "^0.0.0",
-    "next": "^9.1.1",
-    "next-routes": "^1.4.2",
-    "path-match": "^1.2.4",
-    "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-jss": "^10.0.0",
-    "styled-components": "^4.4.0",
-    "url": "^0.11.0"
+    "next": "^9.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.5.1",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.4.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.16.0",
-    "prettier": "^1.18.2"
+    "babel-plugin-styled-components": "^1.10.7"
   }
 }

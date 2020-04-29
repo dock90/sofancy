@@ -1,3 +1,10 @@
-# sofancy
+# Dock 90 - Web App Development Studio
 
-Dock90 front end. Built with next, ssr material styles, and sanity to run the blog.
+## Link
+https://dock90.io
+
+## Colors
+- #f7f9fc
+- #fafafa
+- #4c4f5a
+- #0872a1

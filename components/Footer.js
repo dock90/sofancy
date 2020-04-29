@@ -1,54 +1,37 @@
-import styled from 'styled-components';
-import media from './styled/Media';
+import styled from 'styled-components'
 
-const FooterWrapper = styled.div`
-  text-align: center;
-  padding: 100px 45px 20px 45px;
-  background: rgb(250, 250, 250) none repeat scroll 0% 0%;
-  font-weight: 500;
-`;
+const Container = styled.div`
+  margin: 1rem 2rem;
 
-const FooterIntro = styled.h2`
-  text-transform: uppercase;
-  font-family: 'Roboto', Oxygen, Ubuntu, 'Open Sans', sans-serif;
-  font-size: 4rem;
-  text-align: left;
-  color: rgb(76, 79, 90);
+  p {
+    margin: 0;
+    padding: 0;
+  }
+`
 
-  ${media.phone`
-    line-height: 4rem;
-  `}
-`;
+const CurrentSpace = styled.div`
+  margin-bottom: 2rem;
+`
 
-const ContactInfo = styled.p`
-  text-align: left;
-  font-size: 1.1rem;
-  color: rgb(76, 79, 90);
-  line-height: 1.3em;
-  padding-top: 20px;
-  font-family: Roboto, Oxygen, Ubuntu, 'Open Sans', sans-serif;
-`;
+const CurrentAddress = styled.div`
+  margin-bottom: 2rem;
+`
+
+const Contact = styled.p``
 
 const Footer = () => (
-  <FooterWrapper>
-    {/* <FooterIntro>Say Hello</FooterIntro> */}
-    <ContactInfo>
-      Currently Located At:
-      <br />
-      The Candy Factory
-    </ContactInfo>
-    <ContactInfo>
-      342 N Queen St, Rear
-      <br />
-      Warehouse D
-      <br />
-      Lancaster, PA 17603
-    </ContactInfo>
-    <ContactInfo>
-      edward@dock90.io
-      <br />
-    </ContactInfo>
-  </FooterWrapper>
-);
+  <Container>
+    <CurrentSpace>
+      <p>Currently Located At:</p>
+      <p>The Candy Factory</p>
+    </CurrentSpace>
+    <CurrentAddress>
+      <p>342 N Queen St, Rear</p>
+      <p>Warehouse D</p>
+      <p>Lancaster, PA 17603</p>
+    </CurrentAddress>
+    <Contact>edward@dock90.io</Contact>
+  </Container>
+)
 
-export default Footer;
+export default Footer
