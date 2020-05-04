@@ -7,17 +7,17 @@ import sanity from "../../lib/sanity";
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-const thoughtsQuery = `*[_type == "post"] { _id }`;
+const thoughtsQuery = `*[_type == "post"] { _id, slug { current } }`;
 
-const singleThoughtQuery = `*[_type == "post" && _id == $id] {
+const singleThoughtQuery = `*[_type == "post" && slug.current == $current] {
   _id,
+  slug,
   title,
   body
 }[0]
 `;
 
 const Thought = ({ thought }) => {
-  console.log('Thought: ', thought)
   const { body } = thought
   return (
     <div>
@@ -40,7 +40,7 @@ export const getStaticPaths = async () => {
   // Get the paths we want to pre-render based on persons
   const thoughts = await sanity.fetch(thoughtsQuery);
   const paths = thoughts.map(thought => ({
-    params: { id: thought._id }
+    params: { current: thought.slug.current }
   }));
 
   // We'll pre-render only these paths at build time.
@@ -50,7 +50,7 @@ export const getStaticPaths = async () => {
 
 // This function gets called at build time on server-side.
 export const getStaticProps = async ({ params }) => {
-  const thought = await sanity.fetch(singleThoughtQuery, { id: params.id });
+  const thought = await sanity.fetch(singleThoughtQuery, { current: params.current });
   return { props: { thought } };
 };
 

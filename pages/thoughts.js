@@ -31,7 +31,7 @@ const Thoughts = ({ thoughts }) => (
       {thoughts.map(thought => {
         const { _id, slug: { current }, title } = thought
         return (
-          <Link href="/thought/[id]" as={`/thought/${_id}`} key={_id}>
+          <Link href="/thought/[current]" as={`/thought/${current}`} key={_id}>
             <a>{title}</a>
           </Link>
         )
