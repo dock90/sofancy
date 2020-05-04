@@ -7,6 +7,11 @@ import sanity from "../../lib/sanity";
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
+// styles
+const Body = styled.div`
+  margin: 2rem;
+`
+
 const thoughtsQuery = `*[_type == "post"] { _id, slug { current } }`;
 
 const singleThoughtQuery = `*[_type == "post" && slug.current == $current] {
@@ -17,6 +22,16 @@ const singleThoughtQuery = `*[_type == "post" && slug.current == $current] {
 }[0]
 `;
 
+const serializers = {
+  types: {
+    code: props => (
+      <pre data-language={props.node.language}>
+        <code>{props.node.code}</code>
+      </pre>
+    )
+  }
+}
+
 const Thought = ({ thought }) => {
   const { body } = thought
   return (
@@ -25,12 +40,14 @@ const Thought = ({ thought }) => {
         <title>Dock90 | Thought</title>
       </Head>
       <Header />
-      <BlockContent
-        blocks={body}
-        // serializers={serializers}
-        dataset={sanity.clientConfig.dataset}
-        projectId={sanity.clientConfig.projectId}
-      />
+      <Body>
+        <BlockContent
+          blocks={body}
+          serializers={serializers}
+          dataset={sanity.clientConfig.dataset}
+          projectId={sanity.clientConfig.projectId}
+        />
+      </Body>
       <Footer />
     </div>
   )
