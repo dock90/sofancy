@@ -9,7 +9,7 @@ import Footer from '../../components/Footer'
 
 // styles
 const Body = styled.div`
-  margin: 2rem;
+  margin: 4rem 2rem;
 `
 
 const thoughtsQuery = `*[_type == "post"] { _id, slug { current } }`;
@@ -22,18 +22,24 @@ const singleThoughtQuery = `*[_type == "post" && slug.current == $current] {
 }[0]
 `;
 
-const serializers = {
-  types: {
-    code: props => (
-      <pre data-language={props.node.language}>
-        <code>{props.node.code}</code>
-      </pre>
-    )
+const BlockRenderer = props => {
+  const { style = 'normal' } = props.node;
+
+  if (style === 'h2') {
+    return <h2>-- {props.children}</h2>
   }
+
+  if (style === 'br') {
+    return <br />
+  }
+
+  // Fall back to default handling
+  return BlockContent.defaultSerializers.types.block(props)
 }
 
 const Thought = ({ thought }) => {
   const { body } = thought
+  console.log('Thought Data: ', thought)
   return (
     <div>
       <Head>
@@ -43,7 +49,7 @@ const Thought = ({ thought }) => {
       <Body>
         <BlockContent
           blocks={body}
-          serializers={serializers}
+          serializers={{ types: { block: BlockRenderer } }}
           dataset={sanity.clientConfig.dataset}
           projectId={sanity.clientConfig.projectId}
         />
