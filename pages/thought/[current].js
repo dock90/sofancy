@@ -12,6 +12,10 @@ const Body = styled.div`
   margin: 4rem 2rem;
 `
 
+const PostTitle = styled.h1`
+  color: #0872a1;
+`
+
 const thoughtsQuery = `*[_type == "post"] { _id, slug { current } }`;
 
 const singleThoughtQuery = `*[_type == "post" && slug.current == $current] {
@@ -38,15 +42,15 @@ const BlockRenderer = props => {
 }
 
 const Thought = ({ thought }) => {
-  const { body } = thought
-  console.log('Thought Data: ', thought)
+  const { body, title } = thought
   return (
     <div>
       <Head>
-        <title>Dock90 | Thought</title>
+        <title>Dock90 | {title}</title>
       </Head>
       <Header />
       <Body>
+        <PostTitle>{title}</PostTitle>
         <BlockContent
           blocks={body}
           serializers={{ types: { block: BlockRenderer } }}
