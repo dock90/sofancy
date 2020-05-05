@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size: 1.1rem;
   }
+  a {
+    text-decoration: none;
+    color: #0872a1;
+  }
 `
 
 export default class MyApp extends App {
