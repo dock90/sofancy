@@ -10,6 +10,11 @@ import Footer from '../../components/Footer'
 // styles
 const Body = styled.div`
   margin: 4rem 2rem;
+  max-width: 750px;
+
+  p {
+    line-height: 1.5rem;
+  }
 `
 
 const PostTitle = styled.h1`
@@ -28,11 +33,6 @@ const singleThoughtQuery = `*[_type == "post" && slug.current == $current] {
 
 const BlockRenderer = props => {
   const { style = 'normal' } = props.node;
-
-  if (style === 'h2') {
-    return <h2>-- {props.children}</h2>
-  }
-
   if (style === 'br') {
     return <br />
   }
