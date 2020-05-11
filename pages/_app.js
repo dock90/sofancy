@@ -32,6 +32,7 @@ export default class MyApp extends App {
             name="description"
             content="Lancaster based web app development studio."
           />
+          <meta name="keywords" content="Web App, Development, Studio"></meta>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
