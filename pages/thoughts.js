@@ -33,7 +33,7 @@ const Published = styled.p`
   margin: 0;
 `
 
-const query = `*[_type == "post"]{
+const query = `*[_type == "post"] | order(_createdAt desc) {
   _id,
   title,
   slug,
@@ -50,7 +50,7 @@ const Thoughts = ({ thoughts }) => (
     <Header />
     <Body>
       <h1>Thoughts</h1>
-      {thoughts.reverse().map(thought => {
+      {thoughts.map(thought => {
         const { _id, slug: { current }, title, publishedAt } = thought
         const published = parseJSON(publishedAt)
         const formatted = format(published, 'MM/dd/yyyy')
