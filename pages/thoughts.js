@@ -12,7 +12,9 @@ const Body = styled.div`
   margin: 2rem;
 `
 
-const Thought = styled.div``
+const Thought = styled.div`
+  margin-bottom: 1.5rem;
+`
 
 const NavLink = styled.a`
   color: #0872a1;
@@ -31,7 +33,7 @@ const Published = styled.p`
   margin: 0;
 `
 
-const query = `*[_type == "post"]{
+const query = `*[_type == "post"] | order(_createdAt desc) {
   _id,
   title,
   slug,
@@ -53,12 +55,12 @@ const Thoughts = ({ thoughts }) => (
         const published = parseJSON(publishedAt)
         const formatted = format(published, 'MM/dd/yyyy')
         return (
-          <div key={_id}>
+          <Thought key={_id}>
             <Link href="/thought/[current]" as={`/thought/${current}`} >
               <NavLink>{title}</NavLink>
             </Link>
             <Published>{formatted}</Published>
-          </div>
+          </Thought>
         )
       })}
     </Body>
