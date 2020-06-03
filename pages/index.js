@@ -17,6 +17,10 @@ const Home = () => (
   <div>
     <Head>
       <title>Dock90 | Web App Development Studio</title>
+      <meta
+        name="description"
+        content="Hi there, welcome to Dock90. I'm Edward - I build web apps. Take a read through my articles, and we can have a think about how to best solve your business problems."
+      />
     </Head>
     <Header />
     <Body>
