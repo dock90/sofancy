@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link';
 import styled from 'styled-components'
 import sanity from "../lib/sanity";
-import { format, parseJSON } from 'date-fns'
 // components
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -29,10 +28,6 @@ const NavLink = styled.a`
   }
 `
 
-const Published = styled.p`
-  margin: 0;
-`
-
 const query = `*[_type == "post"] | order(_createdAt desc) {
   _id,
   title,
@@ -45,21 +40,18 @@ const query = `*[_type == "post"] | order(_createdAt desc) {
 const Thoughts = ({ thoughts }) => (
   <div>
     <Head>
-      <title>Dock90 | Thoughts</title>
+      <title>Thoughts | Dock90</title>
     </Head>
     <Header />
     <Body>
       <h1>Thoughts</h1>
       {thoughts.map(thought => {
         const { _id, slug: { current }, title, publishedAt } = thought
-        const published = parseJSON(publishedAt)
-        const formatted = format(published, 'MM/dd/yyyy')
         return (
           <Thought key={_id}>
             <Link href="/thought/[current]" as={`/thought/${current}`} >
               <NavLink>{title}</NavLink>
             </Link>
-            <Published>{formatted}</Published>
           </Thought>
         )
       })}

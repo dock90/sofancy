@@ -1,36 +1,55 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import styled from 'styled-components'
 // components
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 // styles
+const Container = styled.div`
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+`
+
 const Body = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
   margin: 2rem;
 `
 
 const Intro = styled.div`
-  margin-bottom: 2rem;
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
 `
 
 const Home = () => (
-  <div>
+  <Container>
     <Head>
       <title>Dock90 | Web App Development Studio</title>
       <meta
         name="description"
-        content="Hi there, welcome to Dock90. I'm Edward - I build web apps. Take a read through my articles, and we can have a think about how to best solve your business problems."
+        content="Hi there, welcome to Dock90. I help small businesses drive innovation in the ever competitive world."
       />
     </Head>
     <Header />
     <Body>
       <Intro>
-        <h1>Hi there, welcome to Dock90.</h1>
-        <h2>I'm Edward - I build web apps.</h2>
+        <h2>Hi there, welcome to Dock90.</h2>
+        <h1>I help small businesses <Link href='/about'><a>drive innovation</a></Link> in the ever competitive world.</h1>
       </Intro>
     </Body>
     <Footer />
-  </div>
+  </Container>
 )
 
 export default Home
