@@ -30,6 +30,13 @@ const Intro = styled.div`
   h2 {
     margin-bottom: 3rem;
   }
+
+  a {
+    color: #4c4f5a;
+    text-decoration-line: underline;
+    text-decoration-color: #0872a1;
+    text-decoration-thickness: 4px;
+  }
 `
 
 const Home = () => (
