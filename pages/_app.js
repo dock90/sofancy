@@ -12,9 +12,11 @@ const GlobalStyle = createGlobalStyle`
     color: #4c4f5a;
     max-width: 1200px;
   }
+
   p {
     font-size: 1.1rem;
   }
+
   a {
     text-decoration: none;
     color: #0872a1;

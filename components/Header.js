@@ -25,6 +25,7 @@ const NavLink = styled.a`
   text-decoration: none;
   font-size: 1.2rem;
   font-family: Lato;
+  margin-right: 1rem;
 
   :hover {
     opacity: 0.75;
@@ -35,12 +36,15 @@ const NavLink = styled.a`
 const Header = () => (
   <Container>
     <Logo>
-      <Link href="/">
+      <Link href='/'>
         <NavLink>dock90</NavLink>
       </Link>
     </Logo>
     <Links>
-      <Link href="/thoughts">
+      <Link href='/about'>
+        <NavLink>about</NavLink>
+      </Link>
+      <Link href='/thoughts'>
         <NavLink>thoughts</NavLink>
       </Link>
     </Links>
