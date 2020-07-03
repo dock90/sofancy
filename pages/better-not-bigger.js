@@ -17,14 +17,14 @@ const Body = styled.div`
   margin: 2rem;
 `
 
-const Intro = styled.div`
+const Overview = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin-bottom: 1rem;
 
-  h1 {
+  h2 {
     font-size: 3rem;
+    margin-bottom: 0;
   }
 
   h3 {
@@ -32,28 +32,30 @@ const Intro = styled.div`
     color: #0872a1;
   }
 
-  a {
-    color: #4c4f5a;
-    text-decoration-line: underline;
-    text-decoration-color: #0872a1;
-    text-decoration-thickness: 3px;
+  p {
+    font-size: 1.5rem;
   }
 `
 
-const About = () => (
+const Better = () => (
   <Container>
     <Head>
-      <title>About | Dock90</title>
+      <title>Better - Not Bigger | Dock90</title>
     </Head>
     <Header />
     <Body>
-      <Intro>
-        <h3>What I Do</h3>
-        <h1>I create <span>effective strategies</span>, <span>seamless interactions</span>, and <span>modern platforms</span> to help your business grow <Link href='/better-not-bigger'><a>better</a></Link>, instead of bigger.</h1>
-      </Intro>
+      <Overview>
+        <h3>What does better look like?</h3>
+        <h2>Streamlined</h2>
+        <p>Take what you are doing already, and transform your business with automated integrations and optimized processes.</p>
+        <h2>Innovative</h2>
+        <p>Go in a new direction and bring new ideas to life.</p>
+        <h2>Modern</h2>
+        <p>Get your products and processes up to date with a modern experience and the latest technology.</p>
+      </Overview>
     </Body>
     <Footer />
   </Container>
 )
 
-export default About
+export default Better
