@@ -43,6 +43,11 @@ export default class MyApp extends App {
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         </Head>
         <GlobalStyle />
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <textarea name="message"></textarea>
+        </form>
         <Component {...pageProps} />
       </div>
     )
