@@ -58,32 +58,44 @@ const FormSection = styled.div`
   }
 `
 
-const Contact = () => (
-  <Container>
-    <Header />
-    <Body>
-      <h1>Tell me what you need help with and we will schedule a time to talk.</h1>
-      <Form name="contact" method="post">
-        <input type="hidden" name="form-name" value="contact" />
-        <FormSection>
-          <label>Your Name</label>
-          <input type="text" name="name" />
-        </FormSection>
-        <FormSection>
-          <label>Email</label>
-          <input type="email" name="email" />
-        </FormSection>
-        <FormSection>
-          <label>How Can I Help? </label>
-          <textarea name="message" />
-        </FormSection>
-        <FormSection>
-          <button type="submit">Send Request</button>
-        </FormSection>
-      </Form>
-    </Body>
-    <Footer />
-  </Container>
-)
+const Contact = () => {
+
+  const handleContactSubmit = (event) => {
+    event.preventDefault()
+  }
+
+  return (
+    <Container>
+      <Header />
+      <Body>
+        <h1>Tell me what you need help with and we will schedule a time to talk.</h1>
+        <Form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <FormSection>
+            <label>Your Name</label>
+            <input type="text" name="name" />
+          </FormSection>
+          <FormSection>
+            <label>Email</label>
+            <input type="email" name="email" />
+          </FormSection>
+          <FormSection>
+            <label>How Can I Help? </label>
+            <textarea name="message" />
+          </FormSection>
+          <FormSection>
+            <button type="submit">Send Request</button>
+          </FormSection>
+        </Form>
+      </Body>
+      <Footer />
+    </Container>
+  )
+}
 
 export default Contact
