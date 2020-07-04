@@ -70,7 +70,7 @@ const Contact = () => {
       <Body>
         <h1>Tell me what you need help with and we will schedule a time to talk.</h1>
         <Form
-          name="contact"
+          name="dock90-contact"
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
