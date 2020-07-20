@@ -7,6 +7,12 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 // styles
+const Container = styled.div`
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+`
+
 const Body = styled.div`
   margin: 2rem;
 `
@@ -20,6 +26,7 @@ const NavLink = styled.a`
   transition: all 100ms ease 0s;
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 600;
   font-family: Lato;
 
   :hover {
@@ -28,9 +35,14 @@ const NavLink = styled.a`
   }
 `
 
+const Subtitle = styled.p`
+  margin: 0;
+`
+
 const query = `*[_type == "post"] | order(_createdAt desc) {
   _id,
   title,
+  subtitle,
   slug,
   mainImage,
   publishedAt
@@ -38,7 +50,7 @@ const query = `*[_type == "post"] | order(_createdAt desc) {
 `;
 
 const Thoughts = ({ thoughts }) => (
-  <div>
+  <Container>
     <Head>
       <title>Thoughts | Dock90</title>
     </Head>
@@ -46,18 +58,19 @@ const Thoughts = ({ thoughts }) => (
     <Body>
       <h1>Thoughts</h1>
       {thoughts.map(thought => {
-        const { _id, slug: { current }, title, publishedAt } = thought
+        const { _id, slug: { current }, title, subtitle, publishedAt } = thought
         return (
           <Thought key={_id}>
             <Link href="/thought/[current]" as={`/thought/${current}`} >
               <NavLink>{title}</NavLink>
             </Link>
+            <Subtitle>{subtitle}</Subtitle>
           </Thought>
         )
       })}
     </Body>
     <Footer />
-  </div>
+  </Container>
 )
 
 export const getStaticProps = async () => {

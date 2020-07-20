@@ -16,7 +16,7 @@ const Logo = styled.div`
 
 const Links = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   justify-items: end;
 
@@ -47,6 +47,9 @@ const Header = () => (
       </Link>
     </Logo>
     <Links>
+      <Link href='/work'>
+        <NavLink>work</NavLink>
+      </Link>
       <Link href='/about'>
         <NavLink>about</NavLink>
       </Link>
