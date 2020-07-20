@@ -67,27 +67,27 @@ const Contact = () => (
     <Body>
       <h1>Tell me what you need help with and we will schedule a time to talk.</h1>
       <Form
-        name="dock90-contact"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        name='dock90-contact'
+        method='post'
+        data-netlify='true'
+        data-netlify-honeypot='bot-field'
         action='/what-to-expect'
       >
-        <input type="hidden" name="form-name" value="dock90-contact" />
+        <input type='hidden' name='form-name' value='dock90-contact' />
         <FormSection>
           <label>Your Name</label>
-          <input type="text" name="name" />
+          <input type='text' name='name' />
         </FormSection>
         <FormSection>
           <label>Email</label>
-          <input type="email" name="email" />
+          <input type='email' name='email' />
         </FormSection>
         <FormSection>
           <label>How Can I Help? </label>
-          <textarea name="message" />
+          <textarea name='message' />
         </FormSection>
         <FormSection>
-          <button type="submit">Send Request</button>
+          <button type='submit'>Send Request</button>
         </FormSection>
       </Form>
     </Body>
