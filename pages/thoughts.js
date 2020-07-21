@@ -45,7 +45,6 @@ const query = `*[_type == "post"] | order(_createdAt desc) {
   subtitle,
   slug,
   mainImage,
-  publishedAt
 }
 `;
 
@@ -58,7 +57,7 @@ const Thoughts = ({ thoughts }) => (
     <Body>
       <h1>Thoughts</h1>
       {thoughts.map(thought => {
-        const { _id, slug: { current }, title, subtitle, publishedAt } = thought
+        const { _id, slug: { current }, title, subtitle } = thought
         return (
           <Thought key={_id}>
             <Link href="/thought/[current]" as={`/thought/${current}`} >
