@@ -18,7 +18,7 @@ const Links = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  justify-items: end;
+  justify-items: center;
 
   a {
     margin-left: 1rem;
