@@ -47,11 +47,11 @@ const Header = () => (
       </Link>
     </Logo>
     <Links>
-      <Link href='/work'>
-        <NavLink>work</NavLink>
-      </Link>
       <Link href='/about'>
         <NavLink>about</NavLink>
+      </Link>
+      <Link href='/work'>
+        <NavLink>work</NavLink>
       </Link>
       <Link href='/thoughts'>
         <NavLink>thoughts</NavLink>
