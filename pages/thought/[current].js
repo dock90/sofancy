@@ -21,6 +21,10 @@ const PostTitle = styled.h1`
   color: #0872a1;
 `
 
+const H2 = styled.h2`
+  margin-top: 4rem;
+`
+
 const thoughtsQuery = `*[_type == "post"] { _id, slug { current } }`;
 
 const singleThoughtQuery = `*[_type == "post" && slug.current == $current] {
@@ -33,8 +37,8 @@ const singleThoughtQuery = `*[_type == "post" && slug.current == $current] {
 
 const BlockRenderer = props => {
   const { style = 'normal' } = props.node;
-  if (style === 'br') {
-    return <br />
+  if (style === 'h2') {
+    return <H2>{props.children}</H2>
   }
 
   // Fall back to default handling
