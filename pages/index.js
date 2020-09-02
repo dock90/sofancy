@@ -55,6 +55,26 @@ const Intro = styled.div`
   span {
     color: #0872a1;
   }
+
+  @media screen and (max-width: 650px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2.3rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
 `
 
 const Home = () => (
