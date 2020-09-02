@@ -62,8 +62,12 @@ const Home = () => (
     <Head>
       <title>Dock90 | Customer Experience Studio</title>
       <meta
-        name="description"
-        content="Craft an unforgettable customer experience. I help startups build products by fully understanding your customers pain points and delivering an unforgettable experience backed by quality, maintainable code."
+        name='title'
+        content='Craft an unforgettable customer experience.'
+      />
+      <meta
+        name='description'
+        content='I help startups build products by fully understanding your customers pain points and delivering an unforgettable experience backed by quality, maintainable code.'
       />
     </Head>
     <Header />

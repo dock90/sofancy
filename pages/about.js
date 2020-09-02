@@ -73,6 +73,14 @@ const About = () => (
   <Container>
     <Head>
       <title>About | Dock90</title>
+      <meta
+        name='title'
+        content='See what I am about.'
+      />
+      <meta
+        name='description'
+        content='Im no unicorn BUT...I have been working with startups like yours for the past three years.'
+      />
     </Head>
     <Header />
     <Body>

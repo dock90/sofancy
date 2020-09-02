@@ -16,6 +16,10 @@ const Container = styled.div`
 
 const Body = styled.div`
   margin: 2rem;
+
+  h1 {
+    margin-bottom: 4rem;
+  }
 `
 
 const Projects = styled.div`
@@ -79,7 +83,7 @@ const Work = ({ works }) => {
     <Container>
       <Header />
       <Body>
-        <h1>Work</h1>
+        <h1>Take some time to explore a few teams I have partnered with in the past.</h1>
         <Projects>
           {works.map(work => {
             const {
