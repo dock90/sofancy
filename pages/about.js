@@ -87,7 +87,7 @@ const About = () => (
       <Intro>
         <h4>Does this sound familiar?</h4>
         <h1>"All of our developers are working on the core product. We don't have the resources to experiment with this."</h1>
-        <h2>"We need to build out the next version of our product. We have no one in house who nows how to do this."</h2>
+        <h2>"We need to build out the next version of our product. We have no one in house who knows how to do this."</h2>
         <h2>"We acquired funding and have proven our concept. Now we need to expand our MVP into a solid V1."</h2>
         <h2>"Hiring takes a long time. It does not make sense for us at the stage we are in."</h2>
       </Intro>
