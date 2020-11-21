@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 // styles
 const Container = styled.div`
   display: grid;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: auto;
   grid-template-columns: 1fr;
   height: 100vh;
 `
@@ -17,15 +17,15 @@ const Body = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  align-items: center;
   margin: 2rem;
 
   button {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #4c4f5a;
     background: none;
     border: 4px solid #0872a1;
     padding: 1rem;
+    margin-top: 2rem;
     cursor: pointer;
 
     :hover {
@@ -36,44 +36,30 @@ const Body = styled.div`
 `
 
 const Intro = styled.div`
-  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 4rem;
+`
 
+const ImageContainer = styled.div`
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, .1);
+  }
+`
+
+const CopyContainer = styled.div`
   h1 {
-    font-size: 6rem;
-    font-weight: 700;
+    span {
+      color: #0872a1;
+    }
   }
-
   h2 {
-    font-size: 3rem;
-    margin-bottom: 4rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  span {
-    color: #0872a1;
-  }
-
-  @media screen and (max-width: 650px) {
-    h1 {
-      font-size: 4rem;
-    }
-
-    h2 {
-      font-size: 2.3rem;
-    }
-
-    h3 {
-      font-size: 2rem;
-    }
-  }
-
-  @media screen and (max-width: 450px) {
-    h1 {
-      font-size: 3.5rem;
-    }
+    margin: 0;
+    margin-bottom: 0.5rem;
   }
 `
 
@@ -93,14 +79,21 @@ const Home = () => (
     <Header />
     <Body>
       <Intro>
-        <h1>Craft an <span>unforgettable</span> customer experience.</h1>
-        <h2>I partner with startups to build products by fully understanding your customers pain points and delivering an unforgettable experience backed by quality, maintainable code.</h2>
-        <h3>Want to see what this looks like?</h3>
-        <Link href='/about'>
-          <a>
-            <button>See what I am about</button>
-          </a>
-        </Link>
+        <ImageContainer>
+          <img src='/me.jpg' />
+          <p>👋🏼 Oh hi - thats me. Edward.</p>
+        </ImageContainer>
+        <CopyContainer>
+          <h1>Planning, Design, Development for <span>Software Startups</span></h1>
+          <h2>🗺 Know where to start.</h2>
+          <h2>🎨 Design that makes sense.</h2>
+          <h2>👨🏻‍💻 Quality, maintainable code.</h2>
+          <Link href='/services'>
+            <a>
+              <button>Explore Services</button>
+            </a>
+          </Link>
+        </CopyContainer>
       </Intro>
     </Body>
     <Footer />

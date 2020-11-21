@@ -10,11 +10,20 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: Roboto, 'Open Sans', sans-serif;
     color: #4c4f5a;
-    max-width: 1400px;
+    max-width: 1500px;
+    cursor: crosshair;
   }
 
   h1, h2, h3 {
     font-family: Lato, sans-serif;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
   p {

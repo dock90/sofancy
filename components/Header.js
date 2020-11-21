@@ -52,8 +52,8 @@ const Header = () => (
       </Link>
     </Logo>
     <Links>
-      <Link href='/about'>
-        <NavLink>about</NavLink>
+      <Link href='/services'>
+        <NavLink>services</NavLink>
       </Link>
       <Link href='/work'>
         <NavLink>work</NavLink>
