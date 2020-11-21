@@ -80,14 +80,14 @@ const Intro = styled.div`
 const Home = () => (
   <Container>
     <Head>
-      <title>Dock90 | Customer Experience Studio</title>
+      <title>Dock90 | Planning, Design, Development for Software Startups</title>
       <meta
         name='title'
-        content='Craft an unforgettable customer experience.'
+        content='Planning, Design, Development for Software Startups'
       />
       <meta
         name='description'
-        content='I help startups build products by fully understanding your customers pain points and delivering an unforgettable experience backed by quality, maintainable code.'
+        content='Know where to start. Design that makes sense. Quality, maintainable code.'
       />
     </Head>
     <Header />

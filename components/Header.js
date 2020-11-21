@@ -12,6 +12,11 @@ const Container = styled.div`
 
 const Logo = styled.div`
   display: grid;
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
 `
 
 const Links = styled.div`
@@ -43,7 +48,7 @@ const Header = () => (
   <Container>
     <Logo>
       <Link href='/'>
-        <NavLink>dock90</NavLink>
+        <a><img src='/logoColor.png' /></a>
       </Link>
     </Logo>
     <Links>

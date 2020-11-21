@@ -8,9 +8,13 @@ const GlobalStyle = createGlobalStyle`
     background: #f7f9fc;
     margin: 0;
     padding: 0;
-    font-family: Lato, Roboto, 'Open Sans', sans-serif;
+    font-family: Roboto, 'Open Sans', sans-serif;
     color: #4c4f5a;
-    max-width: 1200px;
+    max-width: 1400px;
+  }
+
+  h1, h2, h3 {
+    font-family: Lato, sans-serif;
   }
 
   p {
@@ -41,6 +45,9 @@ export default class MyApp extends App {
           />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+          </style>
         </Head>
         <GlobalStyle />
         <Component {...pageProps} />
