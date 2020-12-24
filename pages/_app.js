@@ -48,9 +48,9 @@ export default class MyApp extends App {
           <meta charSet="utf-8" />
           <meta
             name="description"
-            content="Lancaster based web app development studio."
+            content="Salt Lake City based startup marketing studio."
           />
-          <meta name="keywords" content="Web App, Development, Studio"></meta>
+          <meta name="keywords" content="Market Validation, Startup Growth, Content Marketing"></meta>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"

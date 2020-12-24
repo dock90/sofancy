@@ -41,7 +41,7 @@ const Discovery = () => (
       <title>Dock90 | 🗺 Strategy</title>
       <meta
         name='title'
-        content='🗺 Know where to start.'
+        content='🗺 Strategy for Startup Marketing Teams'
       />
       <meta
         name='description'

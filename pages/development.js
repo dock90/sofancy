@@ -41,11 +41,11 @@ const Development = () => (
       <title>Dock90 | 👨🏻‍💻 Development</title>
       <meta
         name='title'
-        content='👨🏻‍💻 Quality, maintainable code.'
+        content='👨🏻‍💻 Development for Startup Marketing Teams'
       />
       <meta
         name='description'
-        content='Work with someone who understands how to balance the competing concerns of product development. Responsibility to customer, business, and developer.'
+        content='Work with someone who understands startup marketing and the need for quick validation. Bring your ideas to life in weeks, not months.'
       />
     </Head>
     <Header />

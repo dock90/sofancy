@@ -73,7 +73,7 @@ const Home = () => (
       />
       <meta
         name='description'
-        content='Know where to start. Design that makes sense. Quality, maintainable code.'
+        content='Know where to start. Get it done.'
       />
     </Head>
     <Header />
