@@ -17,7 +17,7 @@ const Body = styled.div`
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  margin: 2rem 2rem 6rem 2rem;
+  margin: 4rem 2rem 6rem 2rem;
 
   button {
     font-size: 1.5rem;
@@ -71,7 +71,7 @@ const Services = () => (
         <Service>
           <h2>🗺 Strategy</h2>
           {/* <img src='/me.jpg' /> */}
-          <h3>"We need to build out the next version of our product. We have no one in house who knows how to do this."</h3>
+          <h3>"We have a great idea that we want to test out, but we are not sure where to start."</h3>
           <Link href='/strategy'>
             <a>
               <button>Take the first step</button>
@@ -81,7 +81,7 @@ const Services = () => (
         <Service>
           <h2>👨🏻‍💻 Development</h2>
           {/* <img src='/me.jpg' /> */}
-          <h3>"We acquired funding and have proven our concept. Now we need to expand our MVP into a solid V1."</h3>
+          <h3>"We have a solid plan of action and know where to go, we just need some help to get it done."</h3>
           <Link href='/development'>
             <a>
               <button>Make it a reality</button>

@@ -80,9 +80,10 @@ const Home = () => (
     <Body>
       <Intro>
         <CopyContainer>
-          <h1>Strategy & Development for <span>Software Startups</span></h1>
-          <h2>🗺 Know where to start.</h2>
-          <h2>👨🏻‍💻 Quality, maintainable code.</h2>
+          <h1>Help your <span>startup marketing</span> team go from idea to validation quicker.</h1>
+          <h2>💡 Test new ideas</h2>
+          <h2>📈 Validate your efforts</h2>
+          <h2>🎁 Deliver what your users are looking for</h2>
           <Link href='/services'>
             <a>
               <button>Explore Services</button>
