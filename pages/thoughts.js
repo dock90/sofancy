@@ -14,7 +14,7 @@ const Container = styled.div`
 `
 
 const Body = styled.div`
-  margin: 0 2rem;
+  margin: 5rem 2rem;
 
   h1 {
     margin: 0;

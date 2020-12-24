@@ -17,7 +17,7 @@ const Body = styled.div`
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  margin: 2rem;
+  margin: 4rem 2rem;
 
   button {
     font-size: 1.5rem;
@@ -50,8 +50,8 @@ const Discovery = () => (
     </Head>
     <Header />
     <Body>
-      <h1>Strategy</h1>
-      <h3>Make a solid plan so you know exactly what you want to do.</h3>
+      <h1>🗺 Strategy</h1>
+      <h3>More info coming soon.</h3>
     </Body>
     <Footer />
   </Container>

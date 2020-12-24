@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Head from 'next/head'
 import styled from 'styled-components'
 // components
@@ -18,7 +17,7 @@ const Body = styled.div`
   grid-template-rows: 0.2fr 1fr;
   grid-template-columns: 1fr;
   justify-items: start;
-  margin: 2rem;
+  margin: 7rem 2rem;
 `
 
 const Form = styled.form`
@@ -65,7 +64,7 @@ const Contact = () => (
     </Head>
     <Header />
     <Body>
-      <h1>Tell me what you need help with and we will schedule a time to talk.</h1>
+      <h1>Want to work together? <br />Lets see if we are a fit! <br />Fill out this nifty form!</h1>
       <Form
         name='dock90-contact'
         method='post'

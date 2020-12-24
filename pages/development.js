@@ -17,7 +17,7 @@ const Body = styled.div`
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  margin: 2rem;
+  margin: 4rem 2rem;
 
   button {
     font-size: 1.5rem;
@@ -50,8 +50,8 @@ const Development = () => (
     </Head>
     <Header />
     <Body>
-      <h1>Development</h1>
-      <p>Coming soon...</p>
+      <h1>👨🏻‍💻 Development</h1>
+      <h3>More info coming soon.</h3>
     </Body>
     <Footer />
   </Container>

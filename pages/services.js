@@ -39,7 +39,7 @@ const ServicesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: 1fr;
-  grid-gap: 4rem;
+  grid-gap: 8rem;
 `
 
 const Service = styled.div`
