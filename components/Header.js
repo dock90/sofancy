@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: auto;
   justify-items: space-between;
   align-items: center;
@@ -12,6 +12,11 @@ const Container = styled.div`
 
 const Logo = styled.div`
   display: grid;
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
 `
 
 const Links = styled.div`
@@ -43,12 +48,12 @@ const Header = () => (
   <Container>
     <Logo>
       <Link href='/'>
-        <NavLink>dock90</NavLink>
+        <a><img src='/logoColor.png' /></a>
       </Link>
     </Logo>
     <Links>
-      <Link href='/about'>
-        <NavLink>about</NavLink>
+      <Link href='/services'>
+        <NavLink>services</NavLink>
       </Link>
       <Link href='/work'>
         <NavLink>work</NavLink>

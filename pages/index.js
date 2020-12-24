@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 // styles
 const Container = styled.div`
   display: grid;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 100px auto;
   grid-template-columns: 1fr;
   height: 100vh;
 `
@@ -17,15 +17,15 @@ const Body = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  align-items: center;
-  margin: 2rem;
+  margin: 4rem 2rem;
 
   button {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #4c4f5a;
     background: none;
     border: 4px solid #0872a1;
     padding: 1rem;
+    margin-top: 2rem;
     cursor: pointer;
 
     :hover {
@@ -36,71 +36,60 @@ const Body = styled.div`
 `
 
 const Intro = styled.div`
-  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 4rem;
+`
 
+const ImageContainer = styled.div`
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, .1);
+  }
+`
+
+const CopyContainer = styled.div`
   h1 {
-    font-size: 6rem;
-    font-weight: 700;
+    span {
+      color: #0872a1;
+    }
   }
-
   h2 {
-    font-size: 3rem;
-    margin-bottom: 4rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  span {
-    color: #0872a1;
-  }
-
-  @media screen and (max-width: 650px) {
-    h1 {
-      font-size: 4rem;
-    }
-
-    h2 {
-      font-size: 2.3rem;
-    }
-
-    h3 {
-      font-size: 2rem;
-    }
-  }
-
-  @media screen and (max-width: 450px) {
-    h1 {
-      font-size: 3.5rem;
-    }
+    margin: 0;
+    margin-bottom: 0.5rem;
   }
 `
 
 const Home = () => (
   <Container>
     <Head>
-      <title>Dock90 | Customer Experience Studio</title>
+      <title>Dock90 | Strategy and Development for Software Startups</title>
       <meta
         name='title'
-        content='Craft an unforgettable customer experience.'
+        content='Strategy and Development for Software Startups'
       />
       <meta
         name='description'
-        content='I help startups build products by fully understanding your customers pain points and delivering an unforgettable experience backed by quality, maintainable code.'
+        content='Know where to start. Get it done.'
       />
     </Head>
     <Header />
     <Body>
       <Intro>
-        <h1>Craft an <span>unforgettable</span> customer experience.</h1>
-        <h2>I partner with startups to build products by fully understanding your customers pain points and delivering an unforgettable experience backed by quality, maintainable code.</h2>
-        <h3>Want to see what this looks like?</h3>
-        <Link href='/about'>
-          <a>
-            <button>See what I am about</button>
-          </a>
-        </Link>
+        <CopyContainer>
+          <h1>Help your <span>startup marketing</span> team go from idea to validation quicker.</h1>
+          <h2>💡 Test new ideas</h2>
+          <h2>📈 Validate your efforts</h2>
+          <h2>🎁 Deliver what your users are looking for</h2>
+          <Link href='/services'>
+            <a>
+              <button>Explore Services</button>
+            </a>
+          </Link>
+        </CopyContainer>
       </Intro>
     </Body>
     <Footer />

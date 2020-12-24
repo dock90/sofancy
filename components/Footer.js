@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  margin: 1rem 2rem;
+  padding: 1rem 2rem;
 
   p {
     margin: 0;
@@ -23,12 +23,11 @@ const Footer = () => (
   <Container>
     <CurrentSpace>
       <p>Currently Located At:</p>
-      <p>The Candy Factory</p>
+      <p>Work Hive</p>
     </CurrentSpace>
     <CurrentAddress>
-      <p>342 N Queen St, Rear</p>
-      <p>Warehouse D</p>
-      <p>Lancaster, PA 17603</p>
+      <p>159 West Broadway #200</p>
+      <p>Salt Lake City, Utah 84101</p>
     </CurrentAddress>
     <Contact>edward@dock90.io</Contact>
   </Container>
