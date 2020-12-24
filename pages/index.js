@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 // styles
 const Container = styled.div`
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 100px auto;
   grid-template-columns: 1fr;
   height: 100vh;
 `
@@ -17,7 +17,7 @@ const Body = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  margin: 2rem;
+  margin: 4rem 2rem;
 
   button {
     font-size: 1.5rem;
@@ -66,10 +66,10 @@ const CopyContainer = styled.div`
 const Home = () => (
   <Container>
     <Head>
-      <title>Dock90 | Planning, Design, Development for Software Startups</title>
+      <title>Dock90 | Strategy and Development for Software Startups</title>
       <meta
         name='title'
-        content='Planning, Design, Development for Software Startups'
+        content='Strategy and Development for Software Startups'
       />
       <meta
         name='description'
@@ -79,14 +79,9 @@ const Home = () => (
     <Header />
     <Body>
       <Intro>
-        <ImageContainer>
-          <img src='/me.jpg' />
-          <p>👋🏼 Oh hi - thats me. Edward.</p>
-        </ImageContainer>
         <CopyContainer>
-          <h1>Planning, Design, Development for <span>Software Startups</span></h1>
+          <h1>Strategy & Development for <span>Software Startups</span></h1>
           <h2>🗺 Know where to start.</h2>
-          <h2>🎨 Design that makes sense.</h2>
           <h2>👨🏻‍💻 Quality, maintainable code.</h2>
           <Link href='/services'>
             <a>

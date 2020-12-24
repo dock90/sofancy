@@ -9,11 +9,12 @@ import Footer from '../../components/Footer'
 
 // styles
 const Body = styled.div`
-  margin: 4rem 2rem;
+  margin: 4rem auto;
+  padding: 0 2rem;
   max-width: 750px;
 
-  p {
-    line-height: 1.5rem;
+  p, li {
+    line-height: 2rem;
   }
 `
 

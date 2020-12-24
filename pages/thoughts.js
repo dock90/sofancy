@@ -14,11 +14,16 @@ const Container = styled.div`
 `
 
 const Body = styled.div`
-  margin: 2rem;
+  margin: 0 2rem;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 4rem;
+  }
 `
 
 const Thought = styled.div`
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 `
 
 const NavLink = styled.a`
