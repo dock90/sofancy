@@ -38,7 +38,7 @@ const Body = styled.div`
 const Development = () => (
   <Container>
     <Head>
-      <title>Dock90 | 👨🏻‍💻 Development</title>
+      <title>👨🏻‍💻 Development | Dock90</title>
       <meta
         name='title'
         content='👨🏻‍💻 Development for Startup Marketing Teams'

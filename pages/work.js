@@ -81,6 +81,9 @@ const query = `*[_type == "project"] | order(publishedAt desc) {
 const Work = ({ works }) => {
   return (
     <Container>
+      <Head>
+        <title>Work | Dock90</title>
+      </Head>
       <Header />
       <Body>
         <h1>Results! Take some time to explore a few teams I have partnered with in the past.</h1>
