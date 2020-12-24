@@ -54,7 +54,7 @@ const Service = styled.div`
 const Services = () => (
   <Container>
     <Head>
-      <title>Dock90 | Services</title>
+      <title>Services | Dock90</title>
       <meta
         name='title'
         content='Learn more about what I do'

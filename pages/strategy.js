@@ -38,7 +38,7 @@ const Body = styled.div`
 const Discovery = () => (
   <Container>
     <Head>
-      <title>Dock90 | 🗺 Strategy</title>
+      <title>🗺 Strategy | Dock90</title>
       <meta
         name='title'
         content='🗺 Strategy for Startup Marketing Teams'
