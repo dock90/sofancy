@@ -66,14 +66,14 @@ const CopyContainer = styled.div`
 const Home = () => (
   <Container>
     <Head>
-      <title>Dock90 | Strategy and Development for Software Startups</title>
+      <title>Dock90 | Strategy and Development for Startup Marketing Teams</title>
       <meta
         name='title'
-        content='Strategy and Development for Software Startups'
+        content='Strategy and Development for Startup Marketing Teams.'
       />
       <meta
         name='description'
-        content='Know where to start. Get it done.'
+        content='Our sole focus is to help your startup marketing team go from idea to validation quicker.'
       />
     </Head>
     <Header />
