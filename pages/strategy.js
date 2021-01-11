@@ -51,7 +51,16 @@ const Discovery = () => (
     <Header />
     <Body>
       <h1>🗺 Strategy</h1>
-      <h3>More info coming soon.</h3>
+      <h3>Past You: "We have a great idea that we want to test out, but we are not sure where to start."</h3>
+      <h3>Future You: "We know exactly what to do and where to start to implement our ideas."</h3>
+      <h3>How do you get from where you are, to where you want to be?</h3>
+      <p>The strategy phase is about understanding your goals and coming up with a plan to execute on them. Get a new perspective on the same problems you seem to be running into again and again. Layout your project, map unknowns and identify actionable next steps to take and get started.</p>
+      <p>Ready to define and take the next steps for your project?</p>
+      <Link href='/contact'>
+        <a>
+          <button>Get in Touch</button>
+        </a>
+      </Link>
     </Body>
     <Footer />
   </Container>
