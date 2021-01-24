@@ -70,7 +70,7 @@ const Home = () => (
       <Intro>
         <CopyContainer>
           <h1>Redefine the future by building the next generation of world-changing companies.</h1>
-          <h2>We work with founders worldwide to turn the best ideas into privately funded companies focused on rapid time to profit.</h2>
+          <h2>We partner with founders worldwide to turn the best ideas into privately funded companies focused on rapid time to profit.</h2>
         </CopyContainer>
       </Intro>
     </Body>
