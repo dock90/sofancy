@@ -32,7 +32,8 @@ const singleThoughtQuery = `*[_type == "post" && slug.current == $current] {
   _id,
   slug,
   title,
-  body
+  body,
+  seo
 }[0]
 `;
 
@@ -47,11 +48,19 @@ const BlockRenderer = props => {
 }
 
 const Thought = ({ thought }) => {
-  const { body, title } = thought
+  const { body, title, seo } = thought
   return (
     <div>
       <Head>
         <title>Dock90 | {title}</title>
+        <meta
+          name='title'
+          content={seo.title}
+        />
+        <meta
+          name='description'
+          content={seo.description}
+        />
       </Head>
       <Header />
       <Body>
