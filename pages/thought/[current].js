@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link';
 import BlockContent from "@sanity/block-content-to-react";
 import styled from 'styled-components'
 import sanity from "../../lib/sanity";
