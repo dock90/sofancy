@@ -17,7 +17,7 @@ const Body = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  margin: 4rem 2rem;
+  margin: 4rem 2rem 10rem 2rem;
 
   button {
     font-size: 1.5rem;
@@ -42,20 +42,9 @@ const Intro = styled.div`
   grid-gap: 4rem;
 `
 
-const ImageContainer = styled.div`
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px hsla(0, 0%, 0%, .1);
-  }
-`
-
 const CopyContainer = styled.div`
   h1 {
-    span {
-      color: #0872a1;
-    }
+    font-size: 96px;
   }
   h2 {
     margin: 0;
@@ -66,29 +55,22 @@ const CopyContainer = styled.div`
 const Home = () => (
   <Container>
     <Head>
-      <title>Dock90 | Strategy and Development for Startup Marketing Teams</title>
+      <title>Dock90</title>
       <meta
         name='title'
-        content='Strategy and Development for Startup Marketing Teams.'
+        content='Dock90'
       />
       <meta
         name='description'
-        content='Our sole focus is to help your startup marketing team go from idea to validation quicker.'
+        content='Our sole focus at Dock90 is to redefine the future by building the next generation of world-changing companies.'
       />
     </Head>
     <Header />
     <Body>
       <Intro>
         <CopyContainer>
-          <h1>Help your <span>startup marketing</span> team go from idea to validation quicker.</h1>
-          <h2>💡 Test new ideas</h2>
-          <h2>📈 Validate your efforts</h2>
-          <h2>🎁 Deliver what your users are looking for</h2>
-          <Link href='/services'>
-            <a>
-              <button>Explore Services</button>
-            </a>
-          </Link>
+          <h1>Redefine the future by building the next generation of world-changing companies.</h1>
+          <h2>We work with founders worldwide to turn the best ideas into privately funded companies focused on rapid time to profit.</h2>
         </CopyContainer>
       </Intro>
     </Body>
