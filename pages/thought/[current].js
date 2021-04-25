@@ -15,6 +15,14 @@ const Body = styled.div`
   p, li {
     line-height: 2rem;
   }
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    max-width: 740px;
+  }
 `
 
 const PostTitle = styled.h1`
